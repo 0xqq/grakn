@@ -49,7 +49,7 @@ def scp(remote, local, ssh_host, ssh_user, ssh_pass):
     ])
 
 
-def wait_for_ssh(ssh_host, ssh_user, ssh_pass, timeout_mins=10):
+def wait_for_ssh(ssh_host, ssh_user, ssh_pass, timeout_mins=20):
     def time_elapsed_in_seconds():
         return time.time() - start_time
 
